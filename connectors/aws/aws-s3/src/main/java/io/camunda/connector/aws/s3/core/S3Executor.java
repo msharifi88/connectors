@@ -81,7 +81,7 @@ public class S3Executor {
     return new UploadResponse(
         uploadObject.bucket(),
         uploadObject.key(),
-        String.format("https://%s.s3.amazonaws.com/%s", uploadObject.bucket(), uploadObject.key()));
+        String.format("http://%s.ai-minio.tejaratshayan.com:9000/%s", uploadObject.bucket(), uploadObject.key()));
   }
 
   private DownloadResponse download(DownloadObject downloadObject) {
